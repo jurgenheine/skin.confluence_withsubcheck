@@ -14,7 +14,7 @@ It's mainly to show the possibility of the script.skinsubtitlechecker.
 
 ###includes.xml
 
-Add this new variable at the end of the file (before the ```XML</include>```) :  
+Add this new variable at the end of the file (before the `</include>`) :  
 ```XML
 <variable name="SubTitleAvailable">
     <value condition="System.HasAddon(script.skinsubtitlechecker)">$INFO[window.Property(SubTitleAvailable)]</value>
@@ -28,7 +28,7 @@ Add this new variable at the end of the file (before the ```XML</include>```) :
 
 ###IncludesCodecFlagging.xml
 
-Add this new variable at the end of the file (before the ```XML</include>```) :  
+Add this new variable at the end of the file (before the `</include>`) :  
 ```XML
 <include name="SubtitlePresentConditions">
     <control type="group" id="1">
@@ -60,18 +60,20 @@ Add this new variable at the end of the file (before the ```XML</include>```) :
 ###MyVideoNav.xml
 
 Add  
-```
-<onload>RunScript(script.skinsubtitlechecker,availabereturnvalue=subavailable&notavailablereturnvalue=subnotavailable&searchreturnvalue=subunknown&backend=True)</onload>```  
+```XML
+<onload>
+    RunScript(script.skinsubtitlechecker, availabereturnvalue=subavailable&notavailablereturnvalue=subnotavailable&searchreturnvalue=subunknown&backend=True)
+</onload>```  
 at the beginning (after the `<window>`).
 	
 ###DialogVideoInfo.xml
 
 Add  
-```
-<onload>RunScript(script.skinsubtitlechecker,availabereturnvalue=subavailable&notavailablereturnvalue=subnotavailable&searchreturnvalue=subunknown&year=$INFO[ListItem.Year]&season=$INFO[ListItem.Season]&episode=$INFO[ListItem.Episode]&tvshow=$INFO[ListItem.TVShowTitle]&originaltitle=$INFO[ListItem.OriginalTitle]&title=$INFO[ListItem.Title]&filename=$INFO[ListItem.FileName])</onload>```  
-at the beginning.
-
-
+```XML
+<onload>
+    RunScript(script.skinsubtitlechecker, availabereturnvalue=subavailable&notavailablereturnvalue=subnotavailable&searchreturnvalue=subunknown&year=$INFO[ListItem.Year]&season=$INFO[ListItem.Season]&episode=$INFO[ListItem.Episode]&tvshow=$INFO[ListItem.TVShowTitle]&originaltitle=$INFO[ListItem.OriginalTitle]&title=$INFO[ListItem.Title]&filename=$INFO[ListItem.FileName])
+</onload>```  
+at the beginning (after the `<window>`).
 
 ###ViewsVideoLibrary.xml
 
