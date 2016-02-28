@@ -14,7 +14,8 @@ It's mainly to show the possibility of the script.skinsubtitlechecker.
 
 ###includes.xml
 
-Add this new variable at the end of the file (before the `</include>`) :  
+Added the folowing variables :  
+
 ```XML
 <variable name="SubTitleAvailable">
     <value condition="System.HasAddon(script.skinsubtitlechecker)">$INFO[window.Property(SubTitleAvailable)]</value>
@@ -28,7 +29,8 @@ Add this new variable at the end of the file (before the `</include>`) :
 
 ###IncludesCodecFlagging.xml
 
-Add this new variable at the end of the file (before the `</include>`) :  
+Added this new include to show subtitle images with subtitle language :  
+
 ```XML
 <include name="SubtitlePresentConditions">
     <control type="group" id="1">
@@ -60,27 +62,28 @@ Add this new variable at the end of the file (before the `</include>`) :
 
 ###MyVideoNav.xml
 
-Add  
+Added the folowing onload event to start the subtitle script in the background  :
+
 ```XML
 <onload>
     RunScript(script.skinsubtitlechecker, availabereturnvalue=subavailable&notavailablereturnvalue=subnotavailable&searchreturnvalue=subunknown&backend=True)
 </onload>
 ```  
-at the beginning (after the `<window>`).
 	
 ###DialogVideoInfo.xml
 
-Add  
+Added the folowing onload event to start the subtitle script once :
+
 ```XML
 <onload>
     RunScript(script.skinsubtitlechecker, availabereturnvalue=subavailable&notavailablereturnvalue=subnotavailable&searchreturnvalue=subunknown&year=$INFO[ListItem.Year]&season=$INFO[ListItem.Season]&episode=$INFO[ListItem.Episode]&tvshow=$INFO[ListItem.TVShowTitle]&originaltitle=$INFO[ListItem.OriginalTitle]&title=$INFO[ListItem.Title]&filename=$INFO[ListItem.FileName])
 </onload>
 ```  
-at the beginning (after the `<window>`).
 
 ###ViewsVideoLibrary.xml
 
-Add the following line to each view under Media Codec Flagging Images
+Added the following lines to each view under Media Codec Flagging Images :
+
 ```XML
 <include>SubtitlePresentConditions</include>
 ``` 
