@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="VideoCodecFlaggingConditions">
+		<control type="image">
+			<description>Video rez Image</description>
+			<width>55</width>
+			<height>35</height>
+			<aspectratio align="right">keep</aspectratio>
+			<texture>$INFO[ListItem.VideoResolution,flagging/video/,.png]</texture>
+		</control>
+		<control type="image">
+			<description>Codec Image</description>
+			<width>80</width>
+			<height>35</height>
+			<aspectratio align="left">keep</aspectratio>
+			<texture>$VAR[videocodec,flagging/video/,.png]</texture>
+		</control>
+	</include>
+	<include name="VideoStereoscopicsFlaggingConditions">
+		<control type="image">
+			<description>Video stereoscopics flagging image</description>
+			<width>55</width>
+			<height>35</height>
+			<aspectratio align="right">keep</aspectratio>
+			<texture>flagging/video/3D.png</texture>
+			<visible>ListItem.IsStereoscopic</visible>
+		</control>
+	</include>
+	<include name="VideoTypeHackFlaggingConditions">
+		<control type="image">
+			<description>Video Type Image</description>
+			<width>80</width>
+			<height>35</height>
+			<aspectratio align="left">keep</aspectratio>
+			<texture>$VAR[typehackflagging,flagging/video/,.png]</texture>
+			<visible>!Skin.HasSetting(HideFilenameFlagging)</visible>
+		</control>
+	</include>
+	<include name="SubtitlePresentConditionsText">
+		<control type="label">
+			<description>Subtitle Present Image</description>
+			<width>80</width>
+			<height>35</height>
+			<label>$VAR[SubTitleAvailable]</label>
+			<font>font14</font>
+			<textcolor>white</textcolor>
+		</control>
+	</include>
+	<include name="SubtitlePresentConditionsOld">
+		<control type="image">
+			<description>Subtitle Present Image</description>
+			<width>80</width>
+			<height>35</height>
+			<aspectratio align="left">keep</aspectratio>
+			<texture>$VAR[SubTitleAvailable]</texture>
+		</control>
+	</include>
+	<include name="SubtitlePresentConditions">
+		<control type="group" id="1">
+			<width>85</width>
+			<height>35</height>
+			<description>Subtitle Present Image</description>
+			<visible>!IsEmpty(window.Property(SubTitleAvailableLanguage))</visible>
+			<control type="image" id="1">
+				<left>5</left>
+				<top>0</top>
+				<width>80</width>
+				<height>35</height>
+				<aspectratio align="left">keep</aspectratio>
+				<texture>$VAR[SubTitleAvailable,flagging/subtitle/,.png]</texture>
+			</control>
+			<control type="label" id="1">
+				<left>38</left>
+				<top>2</top>
+				<width>47</width>
+				<height>35</height>
+				<font>font13</font>
+				<align>left</align>
+				<label>$VAR[SubTitleAvailableLanguage]</label>
+				<textcolor>grey</textcolor>
+			</control>
+		</control>
+	</include>
+	<include name="SubtitlePresentConditionsTest">
+		<control type="image">
+			<description>Subtitle Present Image</description>
+			<width>80</width>
+			<height>35</height>
+			<aspectratio align="left">keep</aspectratio>
+			<texture>OSDSubtitlesNF.png</texture>
+			
+		</control>
+	</include>
+	<include name="VideoMPAAFlaggingConditions">
+		<control type="image">
+			<description>Rating image</description>
+			<width>80</width>
+			<height>35</height>
+			<aspectratio>keep</aspectratio>
+			<texture>$VAR[rating,flagging/ratings/,.png]</texture>
+		</control>
+	</include>
+	<include name="AudioCodecFlaggingConditions">
+		<control type="image">
+			<description>Audio Codec Image</description>
+			<width>80</width>
+			<height>35</height>
+			<aspectratio align="right">keep</aspectratio>
+			<texture>$INFO[ListItem.AudioCodec,flagging/audio/,.png]</texture>
+		</control>
+	</include>
+	<include name="AudioChannelsFlaggingConditions">
+		<control type="image">
+			<description>Audio Codec Image</description>
+			<width>55</width>
+			<height>35</height>
+			<aspectratio align="left">keep</aspectratio>
+			<texture>$INFO[ListItem.AudioChannels,flagging/audio/,.png]</texture>
+		</control>
+	</include>
+	<include name="AspectCodecFlaggingConditions">
+		<control type="image">
+			<description>Aspectratio Image</description>
+			<width>55</width>
+			<height>35</height>
+			<aspectratio align="right">keep</aspectratio>
+			<texture>$INFO[ListItem.VideoAspect,flagging/aspectratio/,.png]</texture>
+		</control>
+	</include>
+</includes>
