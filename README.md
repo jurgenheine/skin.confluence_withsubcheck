@@ -55,7 +55,8 @@ Add this new variable at the end of the file (before the `</include>`) :
 		    <textcolor>grey</textcolor>
         </control>
     </control>
-</include>```  
+</include>
+```  
 
 ###MyVideoNav.xml
 
@@ -63,7 +64,8 @@ Add
 ```XML
 <onload>
     RunScript(script.skinsubtitlechecker, availabereturnvalue=subavailable&notavailablereturnvalue=subnotavailable&searchreturnvalue=subunknown&backend=True)
-</onload>```  
+</onload>
+```  
 at the beginning (after the `<window>`).
 	
 ###DialogVideoInfo.xml
@@ -72,11 +74,18 @@ Add
 ```XML
 <onload>
     RunScript(script.skinsubtitlechecker, availabereturnvalue=subavailable&notavailablereturnvalue=subnotavailable&searchreturnvalue=subunknown&year=$INFO[ListItem.Year]&season=$INFO[ListItem.Season]&episode=$INFO[ListItem.Episode]&tvshow=$INFO[ListItem.TVShowTitle]&originaltitle=$INFO[ListItem.OriginalTitle]&title=$INFO[ListItem.Title]&filename=$INFO[ListItem.FileName])
-</onload>```  
+</onload>
+```  
 at the beginning (after the `<window>`).
 
 ###ViewsVideoLibrary.xml
 
 Add the following line to each view under Media Codec Flagging Images
-`<include>SubtitlePresentConditions</include>` after `<include>VideoTypeHackFlaggingConditions</include>`
+```XML
+<include>SubtitlePresentConditions</include>
+``` 
+after 
+```XML
+<include>VideoTypeHackFlaggingConditions</include>
+```
 
