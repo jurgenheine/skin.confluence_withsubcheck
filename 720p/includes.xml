@@ -16,12 +16,12 @@
 	<include file="IncludesBackgroundBuilding.xml" />
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
-	<variable name="SubTitleAvailable">
-		<value condition="System.HasAddon(script.skinsubtitlechecker)">$INFO[window.Property(SubTitleAvailable)]</value>
+	<variable name="skinsubtitlechecker.available">
+		<value condition="System.HasAddon(script.skinsubtitlechecker)">$INFO[window.Property(skinsubtitlechecker.available)]</value>
 		<value></value>
 	</variable>
-	<variable name="SubTitleAvailableLanguage">
-		<value condition="System.HasAddon(script.skinsubtitlechecker)">$INFO[window.Property(SubTitleAvailableLanguage)]</value>
+	<variable name="skinsubtitlechecker.language.iso_639_2t">
+		<value condition="System.HasAddon(script.skinsubtitlechecker)">$INFO[window.Property(skinsubtitlechecker.language.iso_639_2t)]</value>
 		<value></value>
 	</variable>
 	<variable name="MediaInfoOverlayVar">

@@ -1,3 +1,13 @@
+[B]2.7.4-0.6[/B]
+
+- Addapt to properties name changes of script.skinsubtitlecheck
+- requires script.skinsubtitlecheck v 0.8
+
+[B]2.7.4-0.4[/B]
+
+- Fixed some bugs for showing subtitles
+- requires script.skinsubtitlecheck v 0.7
+
 [B]2.7.4-0.4[/B]
 
 - Addapt to parameter name changes of script.skinsubtitlecheck

@@ -60,14 +60,14 @@
 			<width>85</width>
 			<height>35</height>
 			<description>Subtitle Present Image</description>
-			<visible>!IsEmpty(window.Property(SubTitleAvailableLanguage))</visible>
+			<visible>!IsEmpty(window.Property(skinsubtitlechecker.language.iso_639_2t))</visible>
 			<control type="image" id="1">
 				<left>5</left>
 				<top>0</top>
 				<width>80</width>
 				<height>35</height>
 				<aspectratio align="left">keep</aspectratio>
-				<texture>$VAR[SubTitleAvailable,flagging/subtitle/,.png]</texture>
+				<texture>$VAR[skinsubtitlechecker.available,flagging/subtitle/,.png]</texture>
 			</control>
 			<control type="label" id="1">
 				<left>38</left>
@@ -76,7 +76,7 @@
 				<height>35</height>
 				<font>font13</font>
 				<align>left</align>
-				<label>$VAR[SubTitleAvailableLanguage]</label>
+				<label>$VAR[skinsubtitlechecker.language.iso_639_2t]</label>
 				<textcolor>grey</textcolor>
 			</control>
 		</control>
