@@ -17,12 +17,12 @@ It's mainly to show the possibility of the script.skinsubtitlechecker.
 Added the folowing variables :  
 
 ```XML
-<variable name="SubTitleAvailable">
-    <value condition="System.HasAddon(script.skinsubtitlechecker)">$INFO[window.Property(SubTitleAvailable)]</value>
+<variable name="skinsubtitlechecker.available">
+    <value condition="System.HasAddon(script.skinsubtitlechecker)">$INFO[window.Property(skinsubtitlechecker.available)]</value>
     <value></value>
 </variable>
-<variable name="SubTitleAvailabeleLanguage">
-    <value condition="System.HasAddon(script.skinsubtitlechecker)">$INFO[window.Property(SubTitleAvailabeleLanguage)]</value>
+<variable name="skinsubtitlechecker.language.iso_639_2t">
+    <value condition="System.HasAddon(script.skinsubtitlechecker)">$INFO[window.Property(skinsubtitlechecker.language.iso_639_2t)]</value>
     <value></value>
  </variable>
 ```
@@ -37,14 +37,14 @@ Added this new include to show subtitle images with subtitle language :
         <width>85</width>
         <height>35</height>
         <description>Subtitle Present Image</description>
-        <visible>!IsEmpty(window.Property(SubTitleAvailableLanguage))</visible>
+        <visible>!IsEmpty(window.Property(skinsubtitlechecker.language.iso_639_2t))</visible>
         <control type="image" id="1">
             <left>5</left>
             <top>0</top>
             <width>80</width>
             <height>35</height>
             <aspectratio align="left">keep</aspectratio>
-		    <texture>$VAR[SubTitleAvailable,flagging/subtitle/,.png]</texture>
+	    <texture>$VAR[skinsubtitlechecker.available,flagging/subtitle/,.png]</texture>
         </control>
         <control type="label" id="1">
 		    <left>38</left>
@@ -53,7 +53,7 @@ Added this new include to show subtitle images with subtitle language :
 		    <height>35</height>
 		    <font>font13</font>
 		    <align>left</align>
-		    <label>$VAR[SubTitleAvailableLanguage]</label>
+		    <label>$VAR[skinsubtitlechecker.language.iso_639_2t]</label>
 		    <textcolor>grey</textcolor>
         </control>
     </control>
