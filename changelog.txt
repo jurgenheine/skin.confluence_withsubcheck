@@ -1,34 +1,32 @@
-[B]2.7.4-0.6[/B]
-
-- Addapt to properties name changes of script.skinsubtitlecheck
-- requires script.skinsubtitlecheck v 0.8
-
-[B]2.7.4-0.4[/B]
-
-- Fixed some bugs for showing subtitles
-- requires script.skinsubtitlecheck v 0.7
-
-[B]2.7.4-0.4[/B]
-
-- Addapt to parameter name changes of script.skinsubtitlecheck
-- requires script.skinsubtitlecheck v 0.6
-
-[B]2.7.4-0.3[/B]
-
-- Addapt to language property of script.skinsubtitlecheck
-- requires script.skinsubtitlecheck v 0.4
-
-[B]2.7.4-0.2[/B]
-
-- Create new pictures and changed showing subtitle
-- requires script.skinsubtitlecheck v 0.3
-
-[B]2.7.4-0.1[/B]
+[B]2.8.7-0.1[/B]
 
 - Initial Mod for script.skinsubtitlecheck
-- requires script.skinsubtitlecheck v 0.1
 
-[B]2.7.4[/B]
+[B]2.8.7[/B]
+
+- Updated language files from Transifex
+
+[B]2.8.6[/B]
+
+- Updated language files from Transifex
+
+[B]2.8.5[/B]
+
+- Updated language files from Transifex
+
+[B]2.8.4[/B]
+
+- Updated language files from Transifex
+
+[B]2.8.3[/B]
+
+- Updated language files from Transifex
+
+[B]2.8.2[/B]
+
+- Updated language files from Transifex
+
+[B]2.8.1[/B]
 
 - Updated language files from Transifex
 

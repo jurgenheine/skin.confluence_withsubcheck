@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">8</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
-	<onload>RunScript(script.skinsubtitlechecker,availabereturnvalue=subavailable&notavailablereturnvalue=subnotavailable&searchreturnvalue=subunknown&year=$INFO[ListItem.Year]&season=$INFO[ListItem.Season]&episode=$INFO[ListItem.Episode]&tvshow=$INFO[ListItem.TVShowTitle]&originaltitle=$INFO[ListItem.OriginalTitle]&title=$INFO[ListItem.Title]&filename=$INFO[ListItem.FileName])</onload>
+  <onload>RunScript(script.skinsubtitlechecker, availabereturnvalue=subavailable&notavailablereturnvalue=subnotavailable&searchreturnvalue=subunknown&year=$INFO[ListItem.Year]&season=$INFO[ListItem.Season]&episode=$INFO[ListItem.Episode]&tvshow=$INFO[ListItem.TVShowTitle]&originaltitle=$INFO[ListItem.OriginalTitle]&title=$INFO[ListItem.Title]&filename=$INFO[ListItem.FileName])</onload>
 	<controls>
 		<control type="group">
+			<depth>DepthSideBlade</depth>
 			<visible>!Window.IsVisible(FileBrowser)</visible>
 			<animation effect="slide" start="1100,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="1100,0" time="300" tween="quadratic" easing="out">WindowClose</animation>
 			<control type="image">
 				<left>180</left>
 				<top>0</top>
-				<width>1100</width>
+				<width>1120</width>
 				<height>720</height>
 				<texture border="15,0,0,0" flipx="true">MediaBladeSub.png</texture>
 			</control>
@@ -64,7 +64,6 @@
 					<include>AspectCodecFlaggingConditions</include>
 					<include>VideoStereoscopicsFlaggingConditions</include>
 					<include>VideoTypeHackFlaggingConditions</include>
-					<include>SubtitlePresentConditions</include>
 				</control>
 				<control type="group">
 					<visible>Control.HasFocus(12)</visible>
@@ -180,9 +179,9 @@
 					</control>
 					<control type="list" id="49">
 						<left>290</left>
-						<top>20</top>
+						<top>-4</top>
 						<width>740</width>
-						<height>330</height>
+						<height>390</height>
 						<onleft>49</onleft>
 						<onright>49</onright>
 						<onup>9000</onup>
@@ -294,6 +293,12 @@
 								<visible>!IsEmpty(ListItem.Duration)</visible>
 							</item>
 							<item>
+								<label>$LOCALIZE[38018]:</label>
+								<label2>$INFO[ListItem.Userrating]</label2>
+								<onclick>noop</onclick>
+								<visible>!IsEmpty(ListItem.Userrating)</visible>
+							</item>
+							<item>
 								<label>$LOCALIZE[563]:</label>
 								<label2>$INFO[ListItem.RatingAndVotes]</label2>
 								<onclick>noop</onclick>
@@ -327,7 +332,7 @@
 					</control>
 					<control type="image">
 						<left>290</left>
-						<top>370</top>
+						<top>382</top>
 						<width>740</width>
 						<height>4</height>
 						<aspectratio>stretch</aspectratio>
@@ -456,6 +461,12 @@
 								<visible>!IsEmpty(ListItem.Year)</visible>
 							</item>
 							<item>
+								<label>$LOCALIZE[38018]:</label>
+								<label2>$INFO[ListItem.Userrating]</label2>
+								<onclick>noop</onclick>
+								<visible>!IsEmpty(ListItem.Userrating)</visible>
+							</item>
+							<item>
 								<label>$LOCALIZE[563]:</label>
 								<label2>$INFO[ListItem.RatingAndVotes]</label2>
 								<onclick>noop</onclick>
@@ -505,9 +516,9 @@
 					</control>
 					<control type="list" id="49">
 						<left>390</left>
-						<top>20</top>
+						<top>0</top>
 						<width>640</width>
-						<height>330</height>
+						<height>360</height>
 						<onleft>49</onleft>
 						<onright>49</onright>
 						<onup>9000</onup>
@@ -629,6 +640,12 @@
 								<label2>$INFO[ListItem.Duration] $LOCALIZE[12391]</label2>
 								<onclick>noop</onclick>
 								<visible>!IsEmpty(ListItem.Duration)</visible>
+							</item>
+							<item>
+								<label>$LOCALIZE[38018]:</label>
+								<label2>$INFO[ListItem.Userrating]</label2>
+								<onclick>noop</onclick>
+								<visible>!IsEmpty(ListItem.Userrating)</visible>
 							</item>
 							<item>
 								<label>$LOCALIZE[563]:</label>
@@ -788,6 +805,12 @@
 								<label2>$INFO[ListItem.Duration] $LOCALIZE[12391]</label2>
 								<onclick>noop</onclick>
 								<visible>!IsEmpty(ListItem.Duration)</visible>
+							</item>
+							<item>
+								<label>$LOCALIZE[38018]:</label>
+								<label2>$INFO[ListItem.Userrating]</label2>
+								<onclick>noop</onclick>
+								<visible>!IsEmpty(ListItem.Userrating)</visible>
 							</item>
 							<item>
 								<label>$LOCALIZE[15311]</label>
@@ -985,9 +1008,18 @@
 						<onclick>PlayMedia($INFO[ListItem.Trailer],1)</onclick>
 						<visible>!IsEmpty(ListItem.Trailer) + Skin.HasSetting(WindowedTrailer)</visible>
 					</control>
+					<control type="button" id="7">
+						<description>Set my rating</description>
+						<include>ButtonInfoDialogsCommonValues</include>
+						<label>38023</label>
+						<visible>Control.IsEnabled(7)</visible>
+					</control>
 				</control>
 			</control>
 		</control>
-		<include>Clock</include>
+		<control type="group">
+			<depth>DepthSideBlade</depth>
+			<include>Clock</include>
+		</control>
 	</controls>
 </window>

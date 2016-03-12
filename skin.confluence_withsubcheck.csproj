@@ -48,17 +48,15 @@
     <Content Include="720p\DialogAddonInfo.xml" />
     <Content Include="720p\DialogAddonSettings.xml" />
     <Content Include="720p\DialogAlbumInfo.xml" />
+    <Content Include="720p\DialogAudioDSPManager.xml" />
+    <Content Include="720p\DialogAudioDSPSettings.xml" />
     <Content Include="720p\DialogBusy.xml" />
     <Content Include="720p\DialogButtonMenu.xml" />
     <Content Include="720p\DialogContentSettings.xml" />
     <Content Include="720p\DialogContextMenu.xml" />
     <Content Include="720p\DialogExtendedProgressBar.xml" />
     <Content Include="720p\DialogFavourites.xml" />
-    <Content Include="720p\DialogFileStacking.xml" />
-    <Content Include="720p\DialogGamepad.xml" />
     <Content Include="720p\DialogKaiToast.xml" />
-    <Content Include="720p\DialogKaraokeSongSelector.xml" />
-    <Content Include="720p\DialogKaraokeSongSelectorLarge.xml" />
     <Content Include="720p\DialogKeyboard.xml" />
     <Content Include="720p\DialogMediaFilter.xml" />
     <Content Include="720p\DialogMediaSource.xml" />
@@ -66,17 +64,16 @@
     <Content Include="720p\DialogNetworkSetup.xml" />
     <Content Include="720p\DialogNumeric.xml" />
     <Content Include="720p\DialogOK.xml" />
-    <Content Include="720p\DialogPeripheralManager.xml" />
     <Content Include="720p\DialogPeripheralSettings.xml" />
     <Content Include="720p\DialogPictureInfo.xml" />
     <Content Include="720p\DialogProgress.xml" />
     <Content Include="720p\DialogPVRChannelManager.xml" />
     <Content Include="720p\DialogPVRChannelsOSD.xml" />
     <Content Include="720p\DialogPVRGroupManager.xml" />
-    <Content Include="720p\DialogPVRGuideInfo.xml" />
     <Content Include="720p\DialogPVRGuideOSD.xml" />
     <Content Include="720p\DialogPVRGuideSearch.xml" />
-    <Content Include="720p\DialogPVRRecordingInfo.xml" />
+    <Content Include="720p\DialogPVRInfo.xml" />
+    <Content Include="720p\DialogPVRRadioRDSInfo.xml" />
     <Content Include="720p\DialogPVRTimerSettings.xml" />
     <Content Include="720p\DialogSeekBar.xml" />
     <Content Include="720p\DialogSelect.xml" />
@@ -87,6 +84,7 @@
     <Content Include="720p\DialogVideoInfo.xml" />
     <Content Include="720p\DialogVolumeBar.xml" />
     <Content Include="720p\DialogYesNo.xml" />
+    <Content Include="720p\EventLog.xml" />
     <Content Include="720p\FileBrowser.xml" />
     <Content Include="720p\FileManager.xml" />
     <Content Include="720p\Font.xml" />
@@ -99,14 +97,11 @@
     <Content Include="720p\IncludesPVR.xml" />
     <Content Include="720p\LockSettings.xml" />
     <Content Include="720p\LoginScreen.xml" />
-    <Content Include="720p\MusicKaraokeLyrics.xml" />
     <Content Include="720p\MusicOSD.xml" />
-    <Content Include="720p\MusicOverlay.xml" />
     <Content Include="720p\MusicVisualisation.xml" />
     <Content Include="720p\MyMusicNav.xml" />
     <Content Include="720p\MyMusicPlaylist.xml" />
     <Content Include="720p\MyMusicPlaylistEditor.xml" />
-    <Content Include="720p\MyMusicSongs.xml" />
     <Content Include="720p\MyPics.xml" />
     <Content Include="720p\MyPrograms.xml" />
     <Content Include="720p\MyPVRChannels.xml" />
@@ -139,7 +134,6 @@
     <Content Include="720p\VideoOSD.xml" />
     <Content Include="720p\VideoOSDBookmarks.xml" />
     <Content Include="720p\VideoOSDSettings.xml" />
-    <Content Include="720p\VideoOverlay.xml" />
     <Content Include="720p\ViewsAddonBrowser.xml" />
     <Content Include="720p\ViewsFileMode.xml" />
     <Content Include="720p\ViewsLiveTV.xml" />
@@ -148,7 +142,6 @@
     <Content Include="720p\ViewsPVRGuide.xml" />
     <Content Include="720p\ViewsVideoLibrary.xml" />
     <Content Include="720p\ViewsWeather.xml" />
-    <Content Include="720p\VisualisationPresetList.xml" />
     <Content Include="addon.xml" />
     <Content Include="backgrounds\media-overlay.jpg" />
     <Content Include="backgrounds\settings.jpg" />
@@ -166,6 +159,7 @@
     <Content Include="media\busy.png" />
     <Content Include="media\button-focus.png" />
     <Content Include="media\button-focus2.png" />
+    <Content Include="media\button-focus3.png" />
     <Content Include="media\button-nofocus.png" />
     <Content Include="media\calibratebottomright.png" />
     <Content Include="media\calibratepixelratio.png" />
@@ -185,9 +179,11 @@
     <Content Include="media\defaultaddonalbuminfo.png" />
     <Content Include="media\defaultaddonartistinfo.png" />
     <Content Include="media\defaultaddonaudiodecoder.png" />
+    <Content Include="media\defaultaddonaudiodsp.png" />
     <Content Include="media\defaultaddonaudioencoder.png" />
     <Content Include="media\defaultaddoncontextitem.png" />
     <Content Include="media\defaultaddonhelper.png" />
+    <Content Include="media\defaultaddonimages.png" />
     <Content Include="media\defaultaddoninfoprovider.png" />
     <Content Include="media\defaultaddonlanguage.png" />
     <Content Include="media\defaultaddonlibrary.png" />
@@ -214,6 +210,7 @@
     <Content Include="media\defaultalbumcover.png" />
     <Content Include="media\defaultartist.png" />
     <Content Include="media\defaultaudio.png" />
+    <Content Include="media\defaultaudiodsp.png" />
     <Content Include="media\defaultcdda.png" />
     <Content Include="media\defaultdvdempty.png" />
     <Content Include="media\defaultdvdfull.png" />
@@ -295,7 +292,6 @@
     <Content Include="media\flagging\aspectratio\2.55.png" />
     <Content Include="media\flagging\aspectratio\2.76.png" />
     <Content Include="media\flagging\audiolang.png" />
-    <Content Include="media\flagging\audio\0.png" />
     <Content Include="media\flagging\audio\1.png" />
     <Content Include="media\flagging\audio\10.png" />
     <Content Include="media\flagging\audio\2.png" />
@@ -350,6 +346,9 @@
     <Content Include="media\flagging\ratings\mpaa_pg.png" />
     <Content Include="media\flagging\ratings\mpaa_pg13.png" />
     <Content Include="media\flagging\ratings\mpaa_restricted.png" />
+    <Content Include="media\flagging\rds\rds-logo.png" />
+    <Content Include="media\flagging\rds\rds-radiotext-logo.png" />
+    <Content Include="media\flagging\rds\rds-radiotext-plus-logo.png" />
     <Content Include="media\flagging\sublang.png" />
     <Content Include="media\flagging\subtitle\subavailable.png" />
     <Content Include="media\flagging\subtitle\subnotavailable.png" />
@@ -405,6 +404,7 @@
     <Content Include="media\icon-rss.png" />
     <Content Include="media\icon_addons.png" />
     <Content Include="media\icon_back.png" />
+    <Content Include="media\icon_events.png" />
     <Content Include="media\icon_favourites.png" />
     <Content Include="media\icon_home.png" />
     <Content Include="media\icon_music.png" />
@@ -416,10 +416,12 @@
     <Content Include="media\icon_video.png" />
     <Content Include="media\icon_weather.png" />
     <Content Include="media\infomessagepanel.png" />
+    <Content Include="media\keyboardbackkey.png" />
     <Content Include="media\keyboardcornerbottom.png" />
     <Content Include="media\keyboardcornerbottomnf.png" />
     <Content Include="media\keyboardcornertop.png" />
     <Content Include="media\keyboardcornertopnf.png" />
+    <Content Include="media\keyboarddonekey.png" />
     <Content Include="media\keyboardeditarea.png" />
     <Content Include="media\keyboardkey.png" />
     <Content Include="media\keyboardkeynf.png" />
@@ -449,6 +451,8 @@
     <Content Include="media\osdchannellistnf.png" />
     <Content Include="media\osdchannelupfo.png" />
     <Content Include="media\osdchannelupnf.png" />
+    <Content Include="media\osddspaudiofo.png" />
+    <Content Include="media\osddspaudionf.png" />
     <Content Include="media\osddvdfo.png" />
     <Content Include="media\osddvdnf.png" />
     <Content Include="media\osdepgfo.png" />
@@ -464,8 +468,6 @@
     <Content Include="media\osdpausenf.png" />
     <Content Include="media\osdplay.png" />
     <Content Include="media\osdplayfo.png" />
-    <Content Include="media\osdplaylistfo.png" />
-    <Content Include="media\osdplaylistnf.png" />
     <Content Include="media\osdplaynf.png" />
     <Content Include="media\osdprefo.png" />
     <Content Include="media\osdprenf.png" />
@@ -476,6 +478,8 @@
     <Content Include="media\osdprogressback.png" />
     <Content Include="media\osdprogressmid.png" />
     <Content Include="media\osdprogressmidlight.png" />
+    <Content Include="media\osdradiordsfo.png" />
+    <Content Include="media\osdradiordsnf.png" />
     <Content Include="media\osdrandomofffo.png" />
     <Content Include="media\osdrandomoffnf.png" />
     <Content Include="media\osdrandomonfo.png" />
@@ -523,6 +527,7 @@
     <Content Include="media\pvr-epgprogressindicator.png" />
     <Content Include="media\pvr-hasrecording.png" />
     <Content Include="media\pvr-hastimer.png" />
+    <Content Include="media\pvr-hastimerschedule.png" />
     <Content Include="media\pvr-isrecording.png" />
     <Content Include="media\radiobutton-focus.png" />
     <Content Include="media\radiobutton-nofocus.png" />
@@ -615,6 +620,7 @@
     <Content Include="media\thumbborder.png" />
     <Content Include="media\thumbshadow.png" />
     <Content Include="media\unknown-user.png" />
+    <Content Include="media\videowindowfo.png" />
     <Content Include="media\volumeicon.png" />
   </ItemGroup>
   <ItemGroup>
