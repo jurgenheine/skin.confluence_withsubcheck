@@ -3,7 +3,7 @@
   id="skin.confluence_withsubcheck"
   version="2.8.7-0.1"
   name="Confluence skin with Sub check"
-  provider-name="j.heine">
+  provider-name="Jezz_X, Team Kodi modded by j.heine">
   <requires>
     <import addon="xbmc.gui" version="5.10.0"/>
     <import addon="script.skinsubtitlechecker" version="0.8"/>
